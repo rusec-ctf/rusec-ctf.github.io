@@ -1,0 +1,585 @@
+:root {
+   
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --clr-dark: #333;  /* Dark color for text in light mode, background in dark mode */
+    --clr-light: #fff; /* Light color for background in light mode, text in dark mode */
+    --hacker_black: #0D0208;
+    --dark_green: #003B00;
+    --Islamic_green: #008F11;
+    --Malachite: #00FF41;
+    --rusec_header_gray: #1d2024;
+    --rusec_other_grey: #696969;
+    --rusec_dark: #343a40;
+    --rusec_bkg_grey: #353b43;
+    --rusec_red_accent: #ff2a07;
+    --girly_link: #92a9cf;
+    --girly_link_clicked: #b2a6e4;
+    /*
+    --girly_pink1: #ffb1cb;
+    --girly_pink_lighter: #f4ddd5;
+    --girly_purple: #e099db;
+    --girly_pink2: #ff83a4;
+    --girly_pink_light: #fac7cc;
+    --girly_pink3: #ed8f8f;
+    */
+    --girly_grey: #d8d9eb;
+    --girly_grey2: #8b9f9f;
+    
+    --girly_pink1: #ffc0cb;
+    --girly_rose: #ffe4e1;
+    --girly_pink2: #ffb6c1;
+    --girly_hot_pink: #ff69b4;
+    --girly_ultra_pink: #ff6fff;
+    --girly_persian_pink: #f77fbe;
+    --girly_fuschia: #ff77ff;
+    --girly_lace: #ffddf4;
+    --girly_cherise: #f400a1;
+    --girly_cherise_deep: #da3287;
+
+    --girly_mauve: #e0b0ff;
+    --girly_lilac: #d891ef;
+    --girly_royal_purple:  #7851a9;
+    --girly_rebecca_purple: #663399;
+    --girly_plum: #dda0dd;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  
+      /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+/*
+*,
+*::after,
+*::before {
+  outline: 1px solid red !important;
+}
+*/
+/* ------------------------------------ */
+/*                 Sizes                */
+/* ------------------------------------ */
+
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-2274 {
+    /*overflow: scroll;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  #main-header {
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    text-align: center;
+    /*text-transform: uppercase; */
+    line-height: 1.2em;
+    width: 100%;
+    max-width: 17ch;
+    margin: 0 0 1rem;
+    position: relative;
+  }
+  #hero-2274 .block {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    position: relative;
+    gap: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  #hero-2274 .main-pic {
+    width: auto;
+    /* 427px - 581px */
+    /*max-width: clamp(26.6875rem, 50vw, 36.3125rem);*/
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }   
+
+  ul {
+    width: 100%;
+    padding: 5rem, 0;
+    margin: 0.2rem, 0;
+    /*
+    display: flex ;
+    align-items: center;
+    justify-content: left;
+    */
+    /* 20px - 36px */
+    gap: clamp(1.25rem, 2.6vw, 2.25rem);
+    list-style: none !important;
+    text-align: center;
+  }
+  li{
+    width:100%;
+    padding: 0.5rem, 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  } 
+  .navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .nav-pic{
+    min-width:16px;
+    width: 48px;
+    height: 48px;
+  }
+  #contact .row{
+      padding: 5vw;
+    }
+  footer{
+    padding:0.5%;
+    text-align: center;
+  }
+
+}
+#flag{
+    /* This doesn't do anything, don't mind me */
+    visibility:hidden;
+    /*  */
+  }
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #hero-2274 #main-header{
+    text-align: center;
+    margin:0;
+    padding: 0;
+  }
+  #hero-2274 .block{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+  }
+  #hero-2274 .main-pic {
+    /* 427px - 581px */
+    /*max-width: clamp(26.6875rem, 50vw, 36.3125rem);*/
+    max-width: 100%;
+    max-height: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0.2rem, 0;
+    display: flex ;
+    align-content: space-around ;
+    justify-content: space-evenly;
+    /* 20px - 36px */
+    gap: clamp(1.25rem, 2.6vw, 2.25rem);
+    list-style: none !important;
+    text-align: center;
+  }
+  li{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  } 
+
+  .nav-pic{
+    min-height: 16px;
+    max-height: 30%;
+    height: auto;
+  }
+  footer{
+    padding: 0.5%;
+    text-align: center;
+  }
+  #navigator .navbar-brand {
+    width: 18.4%;
+    max-width: 21.875rem;
+    height: 4.0625rem;
+    /* margin-right auto pushes everything away from it to the right */
+    margin: 0 auto 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+      
+  #navigator .navbar-brand img {
+    width: auto;
+    height: auto;
+    min-height: 16px;
+    min-width: 16px;
+    max-width: 50%;
+    max-height: 50%;
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    
+    object-fit: contain;
+  } 
+  #contact .row{
+      padding: 5vw;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-2274 {
+    /* 100px - 172px */
+    padding-bottom: clamp(6.25rem, 12vw, 10.9375rem);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+  }
+  #hero-2274 .block{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: space-evenly;
+      margin: 5vh, 0;
+    }
+  #hero-2274 .cs-picture {
+    width: 45%;
+    /* same value as the padding, but opposite */
+    bottom: calc(clamp(6.25rem, 12vw, 10.9375rem)*-1);
+    /* 32px - 80px */
+    right: 0;
+  }
+  #hero-2274 .main-pic {
+    width: auto;
+    /* 427px - 581px */
+    /*max-width: clamp(26.6875rem, 50vw, 36.3125rem);*/
+    max-width: 30vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  #hero-2274 #main-header{
+    text-align: center;
+    margin:0;
+    padding: 0;
+  }
+  .container {
+      width: 100%;
+      height: 100%;
+      /*max-width: 80rem;*/
+      margin: 0, auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  #navigator {
+    width: 100%;
+      /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 0 1rem;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    z-index: 10000;
+  }
+    
+      
+  #navigator .navbar-brand {
+    width: 18.4%;
+    max-width: 21.875rem;
+    height: 4.0625rem;
+    /* margin-right auto pushes everything away from it to the right */
+    margin: 0 auto 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+      
+  #navigator .navbar-brand img {
+    width: auto;
+    height: auto;
+    min-height: 16px;
+    max-height: 50%;
+    max-width: 50%;
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    
+    object-fit: contain;
+  } 
+    
+
+    
+  ul {
+    width: 100%;
+    margin: 0.1rem, 0;
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center;
+    /* 20px - 36px */
+    gap: clamp(1.25rem, 2.6vw, 2.25rem);
+    list-style: none !important;
+    text-align: center;
+  }
+  li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  }
+    
+    #navigator .nav-item {
+      list-style: none;
+      padding: 2rem 0;
+      /* prevent flexbox from squishing it */
+      flex: none;
+    }
+    
+    #navigator .nav-link {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1vw, 1rem);
+      line-height: 1.5em;
+      text-decoration: none;
+      margin: 0;
+      color: var(--bodyTextColor);
+      display: block;
+      position: relative;
+    }
+    
+    #navigator .nav-link:hover:before {
+      width: 100%;
+    }
+    #navigator .nav-link.cs-active:before {
+      width: 100%;
+    }
+    #contact .row{
+      padding: 5vw;
+    }
+
+  }
+
+  .contact-details{
+    justify-content: center;
+  }
+  body{
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+  }
+  .contact-details{
+    padding:2% 2%;
+
+  }
+  h1,h2,h3,h4,h5,h6 {
+  font-weight:400;
+  font-family:quattrocento sans,sans-serif;
+  text-align: center;
+
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p{
+    text-align: center;
+  }
+  
+  footer{
+    text-align: center;
+  }
+  
+  .border-meghna {
+  height:1px;
+  margin:15px auto 0;
+  position:relative;
+  width:30%
+  }
+  .border-meghna:before {
+  content:'';
+  height:6px;
+  left:50%;
+  margin-left:-20px;
+  position:absolute;
+  top:-4px;
+  width:50px;
+  }
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1019;
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+
+
+/* ------------------------------------- */
+/*             Default Colors            */
+/* ------------------------------------- */
+
+#main-header {
+  color: var(--rusec_red_accent);
+
+}
+.hero-area{
+background: #989898;
+background: linear-gradient(135deg, rgba(152, 152, 152, 1) 0%, rgba(53, 59, 67, 1) 33%, rgba(13, 2, 8, 1) 100%);
+}
+body {
+  background-color: var(--rusec_bkg_grey);
+}
+.color {
+  color: var(--rusec_red_accent);
+}
+.girly-pop:active , .girly-pop:focus , .girly-pop:hover{
+    color: var(--girly_link_clicked) ;
+}
+.sticky-top {
+  position: sticky;
+  top: 0;
+   z-index: 1019;
+   min-height: 64px;
+  background-color: var(--rusec_header_gray);
+}.pb-5{
+    background: #353839;
+    background: radial-gradient(circle, rgba(53, 56, 57, 1) 37%, rgba(53, 59, 67, 1) 100%);
+  }
+
+p, span {
+  color: var(--girly_grey);
+}
+h1,h2,h3,h4,h5,h6 {
+  color: var(--girly_grey);
+}
+a {
+  text-decoration: none;
+  outline:0;
+  color: var(--girly_grey);
+}
+a:focus, a:hover {
+  outline: 0;
+  color:var(--rusec_red_accent);
+}
+
+.border-meghna{
+  border-top:2px solid rgba(236,239,241,7%);
+}
+.border-meghna:before{
+  background-color:#fff;
+  background-color:#ff2a07
+}
+#contact .row{
+  background-color: #353839;
+}
+/* Default is Dark Mode, below is Girly Pop Mode */
+
+/* ------------------------------------- */ 
+/*            Girly Pop Colors           */
+/* ------------------------------------- */
+
+
+.dark-mode {
+  background-color: var(--girly_plum) ;
+  .hero-area {
+    background: #FFC0CB;
+background: linear-gradient(135deg, rgba(255, 192, 203, 1) 0%, rgba(120, 81, 169, 1) 50%, rgba(173, 43, 160, 1) 100%);
+  } 
+  span, p{
+    color: #722f37; 
+  }
+  a{
+    color: var(--girly_royal_purple);
+  }
+  a:focus, a:hover, a:active {
+    color: var(--girly_rebecca_purple) !important;
+  }
+  .sticky-top {
+    background-color: var(--girly_persian_pink);
+  }
+  .pb-5{
+  background: #D891EF;
+  background: radial-gradient(circle, rgba(216, 145, 239, 1) 37%, rgba(221, 160, 221, 1) 100%);
+  }
+  .navigation {
+    background-color: var(--girly_purple) !important;
+    width: 99%;
+    margin-bottom: -1;
+
+  }
+
+  body{
+    background-color: var(--girly_fuschia) !important;
+    
+  }
+  
+  h1, h2, h3, h4, h5, h6{
+  color: var(--girly_cherise_deep) !important;
+  
+  }  
+  .color{
+    color: var(--girly_royal_purple);
+  }
+
+  .border-meghna{
+  border-top:2px solid var(--girly_rose);
+  }
+  .border-meghna:before{
+  background-color:#fff;
+  background-color:var(--girly_royal_purple);
+  }
+  #contact .row{
+    background-color: var(--girly_lilac);
+  }
+  footer{
+    color: var(--girly_rebecca_purple);
+  }
+}
