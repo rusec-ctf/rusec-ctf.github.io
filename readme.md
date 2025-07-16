@@ -9,7 +9,7 @@
     call to join discord
     physical address: CAVE
     email: rusec4096
-    rizzcord
+    rizzcord ✅
     2 pics to test sticky header
     copyright notice at bottom
         3 easter eggs
